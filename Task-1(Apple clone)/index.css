@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+    padding: 5px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
+}
+.nav-bar img{
+    cursor: pointer;
+}
+.nav-bar-links a{
+    cursor: pointer;
+}
+.nav-bar-links i{
+    cursor: pointer;
+}
+.nav-logo{
+    height:20px;
+    width:20px;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.humbarger{
+    margin-right: 20px;
+    display: none;
+}
+.humbarger .bar{
+    width: 30px;
+    height: 2px;
+    margin: 7px;
+    background: white;
+   }
+.icons{
+    width: 25px;
+    color: white;
+    padding: 0px 15px;
+}
+.nav-bar-links{
+    display: flex;
+}
+.individual-links{
+  text-decoration: none;
+  color: #fbfbfd;
+  padding: 20px;
+}
+
+.information{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #fbfbfd;
+}
+.main-display{
+    display: block;
+   text-align: center;
+}
+
+.main-display h2{
+    padding: 5px 25px;
+    font-size: 50px;
+}
+.main-display h6{
+    padding: 2px;
+    font-size: 32px;
+    font-weight: 300;
+}
+.main-display p{
+    color: 	#C0C0C0;
+    padding: 15px;
+    font-size: 20px;
+}
+.links{
+    padding: 15px;
+}
+.links a{
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #06c;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.main-display img{
+
+}
+
+.uni-offers-watch{
+    padding: 15px;
+    display: inline-flex;
+    width: 100%;
+}
+.student-offers{
+    background: rgb(162, 209, 228);
+    width: 50%;
+    text-align: center;
+}
+.student-offers h3{
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+.student-offers a{
+    color: rgb(8, 96, 184);
+    text-decoration: none;
+    font-size: 19px;
+}
+.student-offers img{
+    padding: 10px;
+}
+.watch{
+    background: black;
+    width: 50%;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+}
+.watch h6{
+    font-size: 20px;
+    padding: 80px 0px 5px 0px;
+    letter-spacing: 2px;
+}
+.watch p{
+    font-size:18px;
+    padding-top: 10px;
+}
+.watch a{
+    position:absolute;
+    color: rgb(8, 96, 184);
+    text-decoration: none;
+    font-size: 19px;
+}
+.imac-and-airtag{
+    width: 100%;
+    display: inline-flex;
+}
+.imac{
+    width: 50%;
+    text-align: center;
+}
+.airtag{
+    width: 50%;
+    text-align: center;
+}
+.music-and-tv{
+    width: 100%;
+    padding: 5px;
+    display: inline-flex;
+}
+.music{
+    width: 50%;
+    background: rgb(184, 163, 126);
+    text-align: center;
+    color: white;
+    height: 71%;
+}
+.music h5{
+  padding-top: 55px;
+  font-size: 35px;
+}
+.music h6{
+    width: 250px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.music img{
+    width: 100%;
+    margin-top: -220px;
+}
+.tv{
+    width: 50%;
+    padding-left: 10px;
+}
+.tv img{
+    height: 80%;
+}
+.info-text{
+    color: grey;
+    text-align: justify;
+    margin: 0 auto;
+    width: 800px;
+    font-size: 14px;
+    margin-top: -130px;
+}
+.info-text p{
+    padding: 10px 0px;
+}
+/* ====================
+  Responsive Section
+=======================*/
+
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .nav-bar-links{
+    width: 80%;
+    align-items: flex-start;
+   } 
+   .nav-bar-links a{
+    font-size: 2rem;
+   }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px){
+.nav-bar-links{
+    position: absolute;
+    top: 4.9vh;
+    min-width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: flex-start;
+    margin: 0;
+}
+ .nav-bar-links a{
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+   }
+   .humbarger{
+    display: block;
+  }
+  .nav-bar{
+      justify-content: initial;
+  }
+  .nav-bar img{
+   margin-left: 130px;
+  }
+  .icons-bar{
+     /* margin-left: 50px; */
+     display: none;
+  }
+  .information{
+      text-align: center;
+      padding: 20px;
+  }
+  .main-display h2{
+    padding: 5px 25px;
+    font-size: 30px;
+}
+.main-display h6{
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 300;
+}
+.main-display p{
+    color: 	#C0C0C0;
+    padding: 5px;
+    font-size: 20px;
+}
+.links{
+    padding: 15px;
+}
+.links a{
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #06c;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.main-display img{
+      height: 300px;
+     width: 300px;
+     padding: 35px;
+     content: url('./img/iPhone-12-small.PNG');
+}
+.main-display .phone-pro{
+    content: url('./img/iPhone-12-pro-small.PNG');
+}
+.main-display .iPad-pro{
+    content: url('./img/iPad-pro-small.PNG');
+}
+.uni-offers-watch , .imac-and-airtag , .music-and-tv{
+    display: block;
+}
+.student-offers , .imac , .music {
+    width: 100%;
+}
+.watch{
+    width: 100%;
+    margin-left: initial;
+    margin: 5px;
+}
+.student-offers img{
+    content: url('./img/students-offer__2_-small-removebg-preview.png');
+}
+.watch a{
+    padding: initial;
+    display: none;
+}
+.watch img{
+    width: 70%;
+}
+.imac img{
+    content: url('./img/iMac-small.PNG');
+}
+.imac h2 , .airtag h2{
+    font-size: 42px;
+}
+.imac p , .links{
+    font-size: 30px;
+}
+.airtag{
+    width: 100%;
+}
+.music img{
+    margin-top: -180px;
+}
+.tv img{
+    content: url('./img/apple-tv-small.PNG');
+    margin-left: initial;
+}
+.info-text{
+    margin-top: initial;
+    width: 300px;
+}
+}
